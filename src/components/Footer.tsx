@@ -1,61 +1,67 @@
-import { Facebook, Twitter, Linkedin, Mail, Anchor, Zap, Building, Users } from 'lucide-react'
+import { Facebook, Twitter, Linkedin, Mail, Zap } from 'lucide-react'
 import Logo from './Logo'
 import { useTranslation } from 'react-i18next'
 
 /**
- * Footer component with company information and links
+ * Footer component with company information and links.
+ *
+ * Behavior:
+ * - Displays company summary, social icons, and grouped footer links.
+ * - Hides any section that has no links (e.g., "Resources" and "Developer Resources" are removed entirely).
+ * - Ensures clean layout by only rendering headings when there are items.
  */
+
 export default function Footer() {
   const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
-  
+
+  /**
+   * Footer link configuration.
+   * - Sections with an empty `links` array will be hidden (no heading or items rendered).
+   * - This effectively removes "Resources" and "Developer Resources".
+   */
   const footerLinks = [
     {
       title: t('footer.solutions'),
       links: [
-        { label: t('footer.shorePowerSystems'), href: "#" },
-        { label: t('footer.booModel'), href: "#" },
-        { label: t('footer.technicalSpecifications'), href: "#" },
-        { label: t('footer.caseStudies'), href: "#" }
-      ]
+        { label: t('footer.shorePowerSystems'), href: '#' },
+        { label: t('footer.booModel'), href: '#' },
+        { label: t('footer.technicalSpecifications'), href: '#' },
+        { label: t('footer.caseStudies'), href: '#' },
+      ],
     },
     {
       title: t('footer.stakeholders'),
       links: [
-        { label: t('footer.harbourAuthorities'), href: "#" },
-        { label: t('footer.energyCompanies'), href: "#" },
-        { label: t('footer.localGovernments'), href: "#" },
-        { label: t('footer.investors'), href: "#" }
-      ]
+        { label: t('footer.harbourAuthorities'), href: '#' },
+        { label: t('footer.energyCompanies'), href: '#' },
+        { label: t('footer.localGovernments'), href: '#' },
+        { label: t('footer.investors'), href: '#' },
+      ],
     },
     {
       title: t('footer.company'),
       links: [
-        { label: t('footer.aboutUs'), href: "#" },
-        { label: t('footer.ourTeam'), href: "#" },
-        { label: t('footer.partners'), href: "#" },
-        { label: t('footer.careers'), href: "#" }
-      ]
+        { label: t('footer.aboutUs'), href: '#' },
+        { label: t('footer.ourTeam'), href: '#' },
+        { label: t('footer.partners'), href: '#' },
+        { label: t('footer.careers'), href: '#' },
+      ],
     },
     {
+      // Hidden (no items)
       title: t('footer.resources'),
-      links: [
-        { label: t('footer.blog'), href: "#" },
-        { label: t('footer.whitePapers'), href: "#" },
-        { label: t('footer.regulations'), href: "#" },
-        { label: t('footer.faq'), href: "#" }
-      ]
+      links: [],
     },
     {
-      title: "Developer Resources",
-      links: [
-        { label: "Deployment Guide", href: "#netlify-guide" },
-        { label: "Getting Started", href: "#" },
-        { label: "API Documentation", href: "#" },
-        { label: "Best Practices", href: "#" }
-      ]
-    }
+      // Hidden (no items)
+      title: 'Developer Resources',
+      links: [],
+    },
   ]
+
+  // Only render sections that actually have items.
+  const visibleSections = footerLinks.filter((section) => section.links.length > 0)
 
   return (
     <footer className="bg-slate-900 text-white py-12">
@@ -75,16 +81,16 @@ export default function Footer() {
               {t('footer.description')}
             </p>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="text-slate-400 hover:text-white transition-colors" aria-label="Email">
                 <Mail size={20} />
               </a>
             </div>
@@ -95,14 +101,17 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          
-          {footerLinks.map((section, index) => (
+
+          {visibleSections.map((section, index) => (
             <div key={index}>
               <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
               <ul className="space-y-2">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a href={link.href} className="text-slate-400 hover:text-white transition-colors text-sm">
+                    <a
+                      href={link.href}
+                      className="text-slate-400 hover:text-white transition-colors text-sm"
+                    >
                       {link.label}
                     </a>
                   </li>
@@ -111,7 +120,7 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        
+
         <div className="border-t border-slate-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm mb-4 md:mb-0">
