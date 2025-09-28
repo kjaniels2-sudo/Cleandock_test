@@ -11,7 +11,14 @@ interface HeroProps {
 }
 
 export default function Hero({ setActiveSection }: HeroProps) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+
+  /** Append a locale-appropriate question mark to a string if missing */
+  const makeQuestion = (raw: string) => {
+    const s = raw.trimEnd()
+    if (/[?？]$/.test(s)) return s
+    return i18n.language?.startsWith('zh') ? s + '？' : s + '?'
+  }
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -35,7 +42,7 @@ export default function Hero({ setActiveSection }: HeroProps) {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
               {t('hero.title')} 
               <br />
-              <span className="text-teal-600">{t('hero.subtitle')}</span>
+              <span className="text-teal-600">{makeQuestion(t('hero.subtitle'))}</span>
             </h1>
             
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">

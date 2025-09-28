@@ -57,7 +57,15 @@
     "keyMetrics": "关键指标",
     "capexReduction": "资本支出减少",
     "operationalBurden": "运营负担",
-    "environmentalImpact": "环境影响"
+    "environmentalImpact": "环境影响",
+    "coInvestmentTitle": "共同投资与利润分享",
+    "coInvestmentDesc": "若港口选择部分持股（大于 0%），利润分享通常随持股比例线性增加。",
+    "ownership": "部分持股",
+    "coInvestment": "共同投资",
+    "profitSharing": "利润分享",
+    "illustrativeNote": "以下相关性仅为示意。最终条款取决于利用率、费率结构和合同。",
+    "correlationInfo100": "示意：若共同投资为 0% → 利润分享为 0%。否则利润分享 ≈ 10% + 0.7 × 共同投资（上限 100%）。",
+    "capexInfo": "示意：资本支出减少 = 100% − 共同投资（相对完全自筹情形）。"
   },
   "solution": {
     "title": "完整的岸电基础设施",
@@ -82,7 +90,7 @@
     "energyStorageDesc": "用于峰值负载管理的可选电池系统",
     "powerCapacity": "电力容量选项",
     "standardCruise": "标准邮轮",
-    "largeVessels": "大型船舶",
+    "largeVessels": "4 MVA 模块化增量",
     "renewableCompatible": "可再生能源兼容",
     "systemUptime": "系统正常运行时间",
     "technicalSupport": "技术支持"
@@ -191,8 +199,8 @@
     "businessCaseDesc": "岸电不再仅仅是一项环境倡议——它是一项提供生态和财务回报的战略商业决策",
     "euMandate": "欧盟岸电指令",
     "euMandateInfo": "替代燃料基础设施法规（AFIR）：自2030年起，主要欧盟港口须为靠港的客运与集装箱船提供岸电",
-    "cruisePreference": "到2030年",
-    "cruisePreferenceInfo": "行业目标：大型邮轮公司计划在2030年前普遍实现岸电就绪；具体采用取决于港口可用性与改造进度",
+    "cruisePreference": "到2028年预计实现 OPS 适配（CLIA）",
+    "cruisePreferenceInfo": "CLIA：预计到2028年，80%的邮轮船队将支持岸电（OPS）。来源：https://cruising.org/onshore-power-supply-ops",
     "roiPeriod": "15+ 年投资回收期",
     "roiInfo": "为指示性范围；取决于利用率、费率结构以及BOO资金模式",
     "regulatoryComplianceFull": "法规合规性",

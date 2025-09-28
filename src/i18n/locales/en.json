@@ -63,15 +63,17 @@
     "ownership": "Part-ownership",
     "coInvestment": "Co-investment",
     "profitSharing": "Profit sharing",
-    "illustrativeNote": "Illustrative correlation only. Final terms depend on utilization, tariff structure, and contract.",
-    "correlationInfo": "Model: if co-investment = 0% → profit sharing = 0%. Otherwise, profit sharing ≈ 15% + 0.75 × ownership, capped at 60%. This is illustrative; actual terms depend on utilization, tariff structure, and contract."
+    "illustrativeNote": "Illustrative correlation only. Final terms depend on utilisation, tariff structure, and contract.",
+    "correlationInfo100": "Illustrative: if Co-investment is 0% → Profit sharing is 0%. Otherwise Profit sharing ≈ 10% + 0.7 × Co-investment (capped at 100%).",
+    "capexInfo": "Illustrative: CAPEX reduction = 100% − Co-investment (relative to fully self-funded).",
+    "correlationInfo": "Model: if co-investment = 0% → profit sharing = 0%. Otherwise, profit sharing ≈ 15% + 0.75 × ownership, capped at 60%. This is illustrative; actual terms depend on utilisation, tariff structure, and contract."
   },
   "solution": {
     "title": "Complete Shore Power Infrastructure",
     "description": "End-to-end shore power solutions designed specifically for cruise terminals, from initial assessment to ongoing operations",
     "implementationProcess": "Implementation Process",
     "assessment": "Assessment & Planning",
-    "assessmentDesc": "Comprehensive site evaluation and customized solution design for your specific harbour requirements.",
+    "assessmentDesc": "Comprehensive site evaluation and customised solution design for your specific harbour requirements.",
     "infrastructure": "Infrastructure Development",
     "infrastructureDesc": "Full-scale deployment of shore power equipment including transformers, switchgear, and connection systems.",
     "gridIntegration": "Grid Integration",
@@ -99,7 +101,7 @@
     "description": "Our flexible BOO model creates value for all stakeholders in the shore power ecosystem",
     "harbourAuthorities": {
       "title": "Harbour Authorities",
-      "description": "Transform your harbour into a sustainable cruise destination with flexibel financial risk models",
+      "description": "Transform your harbour into a sustainable cruise destination with flexible financial risk models",
       "benefits": [
         "Zero capital investment as option",
         "Immediate environmental compliance",
@@ -113,7 +115,7 @@
       "benefits": [
         "Long-term power purchase agreements",
         "Predictable load profiles",
-        "Grid stabilization opportunities",
+        "Grid stabilisation opportunities",
         "Green energy integration"
       ]
     },
@@ -132,7 +134,7 @@
       "description": "Enhance terminal operations with reliable shore power infrastructure.",
       "benefits": [
         "Operational efficiency improvements",
-        "Optimal utilization of shore-power facilities",
+        "Optimal utilisation of shore-power facilities",
         "Competitive advantage",
         "Zero maintenance burden"
       ]
@@ -201,7 +203,7 @@
     "cruisePreference": "expected to be OPS-equipped by 2028 (CLIA)",
     "cruisePreferenceInfo": "CLIA: 80% of cruise fleet expected to be OPS-equipped by 2028. Source: https://cruising.org/onshore-power-supply-ops",
     "roiPeriod": "15+ Year ROI Period",
-    "roiInfo": "Indicative; depends on utilization, tariff structure, and the BOO funding model",
+    "roiInfo": "Indicative; depends on utilisation, tariff structure, and the BOO funding model",
     "regulatoryComplianceFull": "Regulatory Compliance",
     "globalAvailabilityInfo": "Today, ~3% of global cruise terminals provide shore power; availability is growing as regulations expand",
     "outlook2035Info": "By 2035, most major cruise terminals are expected to offer shore power due to regulatory and industry commitments"
@@ -214,14 +216,14 @@
     "initialConsultationDesc": "Comprehensive assessment of harbour requirements and feasibility study",
     "stakeholderAlignment": "Stakeholder Alignment",
     "stakeholderAlignmentDesc": "Engagement with all relevant parties including energy providers and authorities",
-    "agreementFinalization": "Agreement Finalization",
+    "agreementFinalization": "Agreement Finalisation",
     "agreementFinalizationDesc": "BOO contract negotiation and long-term partnership establishment",
     "implementationTimeline": "Implementation Timeline",
     "implementationTimelineDesc": "Coordinated deployment with minimal disruption to harbour operations",
     "commissioning": "Commissioning & Testing",
     "commissioningDesc": "Rigorous testing and certification with all stakeholders",
     "ongoingPartnership": "Ongoing Partnership",
-    "ongoingPartnershipDesc": "Continuous optimization and long-term collaborative success",
+    "ongoingPartnershipDesc": "Continuous optimisation and long-term collaborative success",
     "partnershipBenefits": "Partnership Benefits",
     "sharedSuccess": "Shared Success Model",
     "sharedSuccessDesc": "Our success is directly tied to your success through profit sharing and performance metrics",
@@ -267,7 +269,7 @@
     "thankYou": "Thank you for your inquiry! Our partnership team will contact you within 2 business days.",
     "whyContactUs": "Why Contact Us?",
     "freeAssessment": "Free feasibility assessment",
-    "customizedProposal": "Customized BOO model proposal",
+    "customizedProposal": "Customised BOO model proposal",
     "stakeholderConsultation": "Stakeholder consultation",
     "ourExpertTeam": "Our Expert Team",
     "businessDevelopment": "Business Development",
